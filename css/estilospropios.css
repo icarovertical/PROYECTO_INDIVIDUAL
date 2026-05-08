@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 
@@ -64,6 +65,15 @@ i {
     font-weight: thin;
 }
 
+.header-video {
+    position: absolute;
+    transform: translate(0, -30%); 
+    top: -50px;
+    width: 100%; /*La imagen ocupa todo el ancho*/
+    height: auto;
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
 
 #fondoHeader {
     width: 100%;
@@ -102,8 +112,10 @@ i {
 
   /*ESTILOS DEL MENÚ*/
 #menuPrincipal {
-    background-color: rgb(161, 1, 1);
+    background-color: rgb(255, 0, 0);
     padding: 20px;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
     }
 
 #menuPrincipal > ul {
@@ -115,7 +127,6 @@ i {
 
 /* PREGUNTAR COMO QUITAR LA LINEA BASE DE LOS ITEM*/
 #menuPrincipal > a {
-    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
     font-weight: bold;
